@@ -32,11 +32,18 @@ const length=mixarray.push(7000);
 // mixarray.shift();
 // mixarray.shift();
 const concatarray=mixarray.concat(f);
-console.log("concat",concatarray);
-console.log("mixarray",mixarray);
-console.log("mixarray",mixarray.length);
+// console.log("concat",concatarray);
+// console.log("mixarray",mixarray);
+// console.log("mixarray",mixarray.length);
 
 //slice
 let sliarray=mixarray.slice(1,3);
+// console.log("mixarray",mixarray);
+// console.log("sliarray",sliarray);
+
+//splice
+
+let sliparray=mixarray.splice(1,1,"shan",2);
 console.log("mixarray",mixarray);
-console.log("sliarray",sliarray);
+console.log("sliarray",sliparray);
+
