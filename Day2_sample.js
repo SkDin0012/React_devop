@@ -12,6 +12,8 @@ function chnageobj(obj) {
  console.log(obj);
   obj.country="india";
   console.log("obj",obj);
+ obj=700;
+  console.log("obj",obj);
 
 }
  let person={name:"santh",age:20};
