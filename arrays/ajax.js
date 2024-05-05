@@ -19,11 +19,8 @@ sender.onload=function(){
     console.log(sender.response);
 };
 
-let pp={
-    "name": "morpheus",
-    "job": "leader"
-}
-sender.send(JSON.stringify(pp));
+
+// window.screen.height;
 
 
     
