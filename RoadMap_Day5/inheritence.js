@@ -24,7 +24,7 @@
 // console.log(Ani);
 // console.log(D);
 
-//setPrototypeof method
+// setPrototypeof method
 
 // const hh = {
 //   // h:10,
@@ -39,7 +39,7 @@
 // Object.setPrototypeOf(su,hh);
 // console.log(su);
 
-//factory function
+// factory function
 
 // function ssPerson(name1){
 //     return{
@@ -53,7 +53,7 @@
 // const p1=ssPerson("san");
 // const p2=ssPerson("san");
 
-//constructor function
+// constructor function
 
 // function Person(name){
 //     this.name=name;
@@ -75,8 +75,7 @@
 //  const p1=new Person("san");
 //  const p2=new Person("san");
 
-
-//templeteliterals
+// templeteliterals
 
 // function sname(string,fname,lname){
 //     return `${string[0]} ${fname}  ${lname}`
@@ -85,6 +84,4 @@
 // const completed=sname(`hi`,"san","mmm");
 // console.log(completed);
 
-//rest operator
-
-
+// rest operator
