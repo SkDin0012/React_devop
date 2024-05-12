@@ -4,7 +4,46 @@
     "country":"india",
     "city":"madurai",
     "postion":"Systems Engineer",
-    "skils":["js","Reactjs"]
+    "skils":["js","Reactjs"],
+    "population":"900000"
 },
-"apple"
+
+{
+    "name":"karuppu",
+    "age":24,
+    "country":"Aus",
+    "city":"madurai",
+    "postion":"Sofware Engineer",
+    "skils":["js","Reactjs"],
+    "population":"800000"
+},
+
+{
+    "name":"loki",
+    "age":28,
+    "country":"india",
+    "city":"vellor",
+    "postion":"Systems Engineer",
+    "skils":["js","Reactjs"],
+    "population":"400000"
+},
+{
+    "name":"VB",
+    "age":27,
+    "country":"suoth",
+    "city":"tricty",
+    "postion":"Systems Engineer",
+    "skils":["js","Reactjs"],
+    "population":"4000"
+},
+{
+    "name":"Bharath",
+    "age":25,
+    "country":"USD",
+    "city":"madurai",
+    "postion":"Systems Engineer",
+    "skils":["js","Reactjs"],
+    "population":"40000"
+}
+
 ]

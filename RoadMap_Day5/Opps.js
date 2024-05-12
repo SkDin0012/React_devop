@@ -53,7 +53,6 @@ function Person(name){
 
     }
 }
-
  const p1=new Person("san");
  const p2=new Person("san");
 
