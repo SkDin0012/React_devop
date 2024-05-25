@@ -1,4 +1,4 @@
-import json from "../arrays/data.json" assert {type:"json"}
+
 
 console.log(JSON.parse([
 
