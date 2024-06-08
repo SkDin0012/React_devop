@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- //addEventListener -->
+
+    <!-- <p id="sample">Santhosh</p>
+    <button onclick="alert('Button Clicked')">Event Sample</button>
+    <script>
+        document.getElementById("sample").addEventListener("mouseover",()=>{
+            console.log("the value");
+        });
+    </script> -->
+
+    <!-- <div>
+      <ul id="images">
+        <li>
+          <img
+            id="clouds"
+            width="200px"
+            src="https://images.pexels.com/photos/15511422/pexels-photo-15511422/free-photo-of-full-moon-over-birds-silhouettes-on-tree.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+          />
+        </li>
+        <li>
+          <img
+            id="birds"
+            name="birds"
+            width="200px"
+            src="https://images.pexels.com/photos/18984609/pexels-photo-18984609/free-photo-of-waves-on-beach.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          />
+        </li>
+        <li>
+          <img
+            id="coop"
+            width="200px"
+            src="https://images.pexels.com/photos/23331343/pexels-photo-23331343/free-photo-of-a-black-and-white-photo-of-two-people-walking-on-a-stage.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          />
+        </li>
+
+        <li>
+          <a id="google" href="https://google.com" target="_blank">Google</a>
+        </li>
+      </ul>
+      <input type="text" id="name" name="fname" value="Santhosh">
+    </div> -->
+    <!-- <script>
+      onclick
+      document.getElementById("birds").onclick=function(){
+          alert("birds");
+      }
+
+      document.getElementById("birds").addEventListener("click", function (e) {
+        console.log("clicked birds");
+      },);
+
+      document.addEventListener("click", function () {
+        console.log("documents");
+      },false);
+
+    document.querySelector("#images").addEventListener('click',function(e){
+         console.log(e.target.tagName);
+        if(e.target.tagName==='IMG'){
+            console.log(e.target.id);
+            let removeMe=e.target;
+            let parentNodes= e.target.parentNode;
+            removeMe.remove();
+            document.body.append(removeMe)
+        }
+    })
+
+      document.getElementById("google").addEventListener("click",(e)=>{
+         console.log("Google Clicked");
+         e.preventDefault()
+      });
+
+      document.getElementById("name").onclick=function(e){
+      console.log(e.target.name);
+      console.log(e.target.value);
+      console.log(e.target.id);
+
+      };
+
+      document
+        .getElementById("images")
+        .addEventListener("click", function (event) {
+          console.log("clicked UL");
+        });
+    </script> -->
+ 
+ <script>
+    //dispatchEvent
+    const customEvent=new Event("customEvent",{bubbles:true});
+    document.addEventListener("customEvent",(e)=>{
+        console.log("customEvent",e);
+    });
+    document.addEventListener("click",function (e){
+        console.log("click",e);
+        e.preventDefault();
+    });
+
+    document.dispatchEvent(customEvent);
+ </script>
+
+
+  </body>
+</html>
