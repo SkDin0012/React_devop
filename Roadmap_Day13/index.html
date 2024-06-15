@@ -91,8 +91,8 @@
         });
     </script> -->
  
- <script>
-    //dispatchEvent
+ <!-- <script>
+    dispatchEvent
     const customEvent=new Event("customEvent",{bubbles:true});
     document.addEventListener("customEvent",(e)=>{
         console.log("customEvent",e);
@@ -102,9 +102,42 @@
         e.preventDefault();
     });
 
-    document.dispatchEvent(customEvent);
- </script>
+    const customEvent1=new CustomEvent("custom:click",{detail:{name:"custom"}})
+    document.addEventListener("customEvent",(e)=>{
+        console.log("click",e);
+    });
+    document.addEventListener("custom:click",function (e){
+        console.log("customevent",e);
+    });
+    document.dispatchEvent(customEvent1);
+ </script> -->
 
+ <form action="" id="details">
+    <lable for="fname">firstname</lable>
+    <input type="text" id="fname" name="fname" /></br></br>
+    <lable for="mname">middlename</lable>
+    <input type="text" id="mname" name="mname" /></br></br>
+    <lable for="lname">Lastnmae</lable>
+    <input type="text" id="lname" name="lname" /></br></br>
+    <button type="submit">Send Details</button>
+ </form>
 
+<script>
+    const Forms=document.getElementById("details")
+    Forms.addEventListener("submit",(e)=>{
+        e.preventDefault();
+
+        const fname=document.getElementById("fname").value;
+        const mname=document.getElementById("mname").value;
+        const lname=document.getElementById("lname").value;
+
+        if(fname===''|| mname===''|| lname===''){
+            alert("details as mised");
+            return;
+        }
+        //siumationa the server call
+        Forms.reset()
+    })
+</script>
   </body>
 </html>
