@@ -44,7 +44,6 @@
 //         resolve("the testting p1");
 //     },20000);
 //   });
-    
 
 // async function greate() {
 //   const res = await p1;
@@ -97,17 +96,16 @@
 //     "https://jsonplaceholder.typicode.com/comments"
 // ]);
 
-( async(urls)=>{
-    try{
-    const Promises=urls.map((url)=>fetch(url));
-    console.log(Promises);
-    const r=await Promise.all(Promises);
-    const Promises2=r.map((ele)=>ele.json());
-    const r2= await Promise.all(Promises2);
-    console.log(r2);
- } catch(error){}
-})([
-
-    "https://jsonplaceholder.typicode.com/posts",
-    "https://jsonplaceholder.typicode.com/comments"
-]);
+// (async (urls) => {
+//   try {
+//     const Promises = urls.map((url) => fetch(url));
+//     console.log(Promises);
+//     const r = await Promise.all(Promises);
+//     const Promises2 = r.map((ele) => ele.json());
+//     const r2 = await Promise.all(Promises2);
+//     console.log(r2);
+//   } catch (error) {}
+// })([
+//   "https://jsonplaceholder.typicode.com/posts",
+//   "https://jsonplaceholder.typicode.com/comments",
+// ]);
